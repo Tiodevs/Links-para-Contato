@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,700;0,900;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1E1E1E;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: 'Raleway';
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+}
+
+header .container,
+main .container,
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+header .container img {
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+}
+
+header .container p {
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+
+main .container {
+    margin-top: 25px;
+}
+
+main .container a {
+    color: #FFFFFF;
+    font-weight: 550;
+    line-height: 1;
+    font-size: 18px;
+}
+
+main .container .buttom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 56px;
+    min-width: 540px;
+    margin-top: 15px;
+
+    border: 2px solid #27AE60;
+    border-radius: 8px;
+}
+
+main .container .buttom:hover{
+    background-color: #27AE60;
+}
+
+footer .container .redes,
+footer .container .makefor {
+    margin-top: 30px;
+}
+
+footer .container .makefor p {
+    color: #FFFFFF;
+}
+
+@media (max-width: 830px) {
+    main .container .buttom {
+        min-width: 540px;
+    }
+}
+
+@media (max-width: 650px) {
+    main .container .buttom {
+        min-width: 440px;
+    }
+}
+
+@media (max-width: 500px) {
+    main .container .buttom {
+        min-width: 340px;
+    }
+
+    main .container a {
+        font-weight: 550;
+        line-height: 1;
+        font-size: 17px;
+    }
+}
